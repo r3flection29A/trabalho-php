@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale comigo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Entre em contato comigo!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="faleconosco.html">Fale Comigo</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="conteudo">
+        <h2>Fale comigo</h2>
+        <form action="processar-formulario.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <input type="submit" id="botao-enviar" value="Enviar">
+        </form>
+    </section>
+    <footer>
+        <div id="contato">
+            <p>Contato:</p>
+            <ul>
+                <li><a href="https://br.linkedin.com/in/jo%C3%A3o-pedro-roldan-da-silva-1747b2200/">LinkedIn</a></li>
+                <li><a href="https://www.github.com/r3flection29A">GitHub</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
