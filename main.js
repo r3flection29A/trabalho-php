@@ -5,8 +5,7 @@ function validarFormulario() {
     const mensagemErro = document.getElementById('mensagem-erro');
 
     if (nome === "" || email === "" || mensagem === "") {
-        mensagemErro.textContent = "Por favor, preencha todos os campos.";
-        mensagemErro.style.color = "red";
+        alert("Preencha todos os campos!");
         return false;
     }
 
@@ -17,8 +16,9 @@ function validarFormulario() {
         return false;
     }
 
-    mensagemErro.textContent = "Mensagem enviada com sucesso!";
-    mensagemErro.style.color = "green";
+    alert("Mensagem enviada com sucesso!")
+    // mensagemErro.textContent = "Mensagem enviada com sucesso!";
+    // mensagemErro.style.color = "green";
     return true;
 }
 
